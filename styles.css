@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container  {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 15px;
+}
+
+.container div {
+    border: 5px solid black;
+}
+
+.header {
+    grid-column: 2 / 5;
+}
+
+.sidebar {
+    grid-row: 1 / 5;
+}
+
+.content {
+    grid-row: 2 / 5;
+    grid-column: 2 / 5;
+}
