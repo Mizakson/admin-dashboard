@@ -1,7 +1,10 @@
 body, html {
     height: 100%;
-    width: 100%;
     margin: 0;
+}
+
+ul, li {
+    list-style-type: none;
 }
 
 .container {
@@ -24,13 +27,48 @@ body, html {
 
 .header {
     grid-column: 2 / 5;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    padding: 5px;
+    gap: 10px;
 }
 
 .sidebar {
     grid-row: 1 / 5;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border: 2px solid black;
+    padding: 5px;
+    gap: 10px;
 }
 
 .content {
     grid-row: 2 / 5;
     grid-column: 2 / 5;
+}
+
+.options {
+    grid-row: 2fr / 3fr;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 25px;
+    font-size: 2vh;
+}
+
+#user-actions, #help {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
