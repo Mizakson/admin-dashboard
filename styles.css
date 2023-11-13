@@ -10,6 +10,9 @@ body, html {
     --icon-height: 40px;
     --icon-width: 40px;
     --icon-border-radius: 100px;
+    --small-icon-height: 25px;
+    --small-icon-width: 25px;
+    --small-icon-border-radius: 60px;
 }
 
 ul, li {
@@ -20,6 +23,13 @@ ul, li {
     height: var(--icon-height);
     width: var(--icon-width);
     border-radius: var(--icon-border-radius);
+    background-color: white;
+}
+
+.small-icon {
+    height: var(--small-icon-height);
+    width: var(--small-icon-width);
+    border-radius: var(--small-icon-border-radius);
     background-color: white;
 }
 
@@ -54,6 +64,33 @@ ul, li {
     background-color: var(--sidebar-color);
     color: white;
 
+}
+
+.dashboard-title img {
+    padding: 5px;
+}
+
+.menu #user-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+} 
+
+.menu > ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+}
+
+.menu > ul > li > img {
+    padding: 5px;
+}
+
+#gap {
+    padding: 2vh;
 }
 
 .content {
