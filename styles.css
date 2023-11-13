@@ -50,7 +50,7 @@ ul, li {
     grid-column: 2 / 5;
     display: grid;
     grid-template-rows: 2fr 3fr;
-    padding: 5px;
+    padding: 25px;
     gap: 10px;
 }
 
@@ -187,3 +187,93 @@ ul, li {
     height: 100%;
 }
 
+.search-box {
+    height: 30px;
+    width: 800px;
+    background-color: #d1d5db;
+    border-radius: 40px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.options > div {
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.right-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.options-profile-name {
+    font-size: 2vh;
+}
+
+#options-alien {
+    background-color: greenyellow;
+    height: var(--icon-height);
+    width: var(--icon-width);
+    padding: 3px;
+}
+
+#nav-alien {
+    background-color: greenyellow;
+    height: 80px;
+    width: 80px;
+    padding: 3px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+
+
+strong {
+    font-size: 2.5vh;
+}
+
+button {
+    padding: 7px;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--sidebar-color);
+    color: white;
+    font-family: inherit;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
