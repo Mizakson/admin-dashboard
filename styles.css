@@ -192,9 +192,7 @@ ul, li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
-    border-radius: 15px;
+    justify-content: space-between;
 }
 
 #top-gap {
@@ -410,4 +408,19 @@ hr {
 
 .announcement, .trending-user-container {
     box-shadow: 2px 2px var(--sidebar-color);
+}
+
+.user-info > .body-text {
+    font-size: small;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user1, #user2, #user3, #user4 {
+    margin-right: -20px;
+    /* */
 }
