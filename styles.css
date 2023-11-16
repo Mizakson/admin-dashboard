@@ -99,9 +99,9 @@ ul, li {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 2fr 2fr;
-    border: 2px solid black;
     padding: 5px;
     gap: 10px;
+    background-color: #d1d5db;
 }
 
 .options {
@@ -139,7 +139,7 @@ ul, li {
     text-align: center;
     gap: 5px;
     padding: 5px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .projects-container {
@@ -153,15 +153,15 @@ ul, li {
 }
 
 .content-title {
-    text-align: center;
-    /* font-style: ; */
+    text-align: left;
+    padding-left: 2vw;
 }
 
 .announcements {
     grid-row: 1 / 2;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     gap: 15px;
     padding: 1vh;
     text-align: center;
@@ -170,21 +170,30 @@ ul, li {
 .trending {
     grid-column: 2 / 2;
     grid-row: 2 / 4;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 .trending-user-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .trending-user {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 15px;
+}
+
+#top-gap {
+    padding-top: 10px;
 }
 
 .search-box {
@@ -251,7 +260,7 @@ ul, li {
 .welcome-text {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     text-align: left;
 }
 
@@ -276,4 +285,38 @@ button {
     gap: 40px;
     align-items: center;
     justify-content: center;
+}
+
+.content-title {
+    font-size: 2vh;
+    text-align: left;
+    align-items: center;
+}
+
+.projects, .announcements, .trending {
+    background-color: #d1d5db;
+}
+
+.trending-user, .announcement, .project {
+    background-color: white;
+}
+
+.project {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    justify-content: start;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px var(--sidebar-color);
+}
+
+.announcement {
+    border-radius: 15px;
+}
+
+.body-text {
+    color: gray;
 }
