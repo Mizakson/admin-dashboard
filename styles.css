@@ -164,6 +164,7 @@ ul, li {
     gap: 15px;
     padding: 1vh;
     text-align: center;
+    align-items: center;
 }
 
 .trending {
@@ -183,7 +184,7 @@ ul, li {
     background-color: white;
     border-radius: 15px;
     margin-top: -5px;
-    width: 75%;
+    width: 65%;
     padding: 8px;
 }
 
@@ -333,6 +334,8 @@ button {
 .announcement {
     border-radius: 15px;
     margin-top: -20px;
+    padding: 10px;
+    width: 65%;
 }
 
 .sub-announcement > .body-text {
@@ -399,4 +402,12 @@ button {
 
 .sub-announcement > .cell-title {
     margin-bottom: -10px;
+}
+
+hr {
+    width: 4vw;
+}
+
+.announcement, .trending-user-container {
+    box-shadow: 2px 2px var(--sidebar-color);
 }
