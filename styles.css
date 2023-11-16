@@ -180,7 +180,6 @@ ul, li {
 
 .trending-user-container {
     display: flex;
-    flex-direction: column;
     background-color: white;
     border-radius: 15px;
     margin-top: -5px;
@@ -192,7 +191,7 @@ ul, li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 25px;
 }
 
 #top-gap {
@@ -412,15 +411,30 @@ hr {
 
 .user-info > .body-text {
     font-size: small;
+    padding-left: 10px;
 }
 
-.user-info {
-    display: flex;
+.trending-user-container ul {
     align-items: center;
-    gap: 10px;
+    justify-content: left;
 }
 
-#user1, #user2, #user3, #user4 {
-    margin-right: -20px;
-    /* */
+#user1 {
+    background-color: lightblue;
+    padding: 5px;
+}
+
+#user2 {
+    background-color: blue;
+    padding: 5px;
+}
+
+#user3 {
+    background-color: yellow;
+    padding: 5px;
+}
+
+#user4 {
+    background-color: pink;
+    padding: 5px;
 }
