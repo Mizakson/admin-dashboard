@@ -313,6 +313,20 @@ button {
     box-shadow: 2px 2px var(--sidebar-color);
 }
 
+.project-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+    padding: 10px;
+}
+
+.project-icons > img {
+    height: var(--small-icon-height);
+    width: var(--small-icon-width);
+    padding: 5px;
+}
+
 .announcement {
     border-radius: 15px;
 }
