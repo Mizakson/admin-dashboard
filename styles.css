@@ -154,7 +154,7 @@ ul, li {
 
 .content-title {
     text-align: left;
-    padding-left: 2vw;
+    padding-left: 1vw;
 }
 
 .announcements {
@@ -303,13 +303,8 @@ button {
 
 .project {
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 2vw;
-    padding-top: 2vh;
-    justify-content: start;
-    /* border: 1px solid black; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     box-shadow: 2px 2px var(--sidebar-color);
 }
 
@@ -317,8 +312,9 @@ button {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: end;
-    padding: 10px;
+    justify-content: right;
+    grid-row: 3 / span 1;
+    padding-right: 1vw;
 }
 
 .project-icons > img {
@@ -338,4 +334,18 @@ button {
 .cell-title {
     font-weight: bold;
     font-size: 16px;
+}
+
+.project > .cell-title {
+    grid-row: 1 / span 1;
+    padding-left: 1vw;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.project > .body-text {
+    grid-row: 2 / span 1;
+    margin-top: -10px;
+    padding-left: 1vw;
+    text-align: left;
 }
